@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn HTML5</title>
+</head>
+<body>
+<!--	<audio src="audio.m4a" controls></audio>-->
+	<audio controls preload="auto" loop muted style="width: 70px">
+		<source src="audio.m4a" type="audio/mpeg" title="Audio">
+	</audio>
+	<audio controls preload="auto" muted loop preload="auto">
+		<source src="audio.m4a" type="audio/mpeg" title="Audio">
+	</audio>
+
+	<audio controls preload="auto" muted loop preload="none">
+		<source src="audio.m4a" type="audio/mpeg" title="Audio">
+	</audio>
+	<audio controls preload="auto" muted loop preload="metadata">
+		<source src="audio.m4a" type="audio/mpeg" title="Audio">
+	</audio>
+	
+<!--	<video src="video.mov" controls preload="auto"></video>-->
+	<video controls preload="auto" muted width="300" poster="image.png">
+		<source src="video.mov" type="video/mp4">
+	</video>
+
+</body>
+</html>
