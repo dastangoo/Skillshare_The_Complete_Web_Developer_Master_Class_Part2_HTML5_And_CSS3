@@ -47,7 +47,7 @@ main {
 	height: 100%;
 }
 
-section {
+.first_section {
 	padding: 0 5%;
 }
 section h2 {
@@ -80,4 +80,17 @@ article img {
 }
 .article_description {
 	text-align: center;
+}
+.second_section {
+	background: url(background2.jpg) no-repeat gray;
+	background-size: 100%;
+	width: 100%;
+	height: 1280px;
+	padding: 50px 50px;
+	box-sizing: border-box;
+}
+.second_section h2 {
+	text-align: center;
+	color: white;
+	font-size: 60px;
 }
