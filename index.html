@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learn HTML5</title>
+	<style>
+		#div1 {
+			background: orange;
+			border: 1px solid black;
+			width: 200px;
+			height: 200px;			
+			margin: 10px;
+			transition: background 2s, width 5s linear ;
+		}
+		#div1:hover {
+			background: brown;
+			width: 400px;
+		}
+		#div2 {
+			background: orange;
+			border: 1px solid black;
+			width: 200px;
+			height: 200px;			
+			margin: 10px;
+			transition: background 2s, width 5s ease-in ;
+		}
+		#div2:hover {
+			background: brown;
+			width: 400px;
+		}
+		#div3 {
+			background: orange;
+			border: 1px solid black;
+			width: 200px;
+			height: 200px;			
+			margin: 10px;
+			transition: background 2s, width 5s ease-out;
+		}
+		#div3:hover {
+			background: brown;
+			width: 400px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+</body>
+</html>
