@@ -22,6 +22,11 @@ header {
 #left_header {
 	padding: 50px 0;
 	float: left;
+	margin-left: 30px;
+	cursor: default;
+}
+#left_header:hover {
+	color: black;
 }
 header h1 {
 	font-size: 40px;
@@ -29,12 +34,17 @@ header h1 {
 #right_header {
 	float: right; 
 }
+#right_header a {
+	color: white;
+}
 #right_header ul {	}
 #right_header ul li {
 	float: left; 
 	padding: 57px 30px;
 	font-size: 30px;
 	margin: 0 2px;
+	transition: background 1s;
+	cursor:pointer;
 }
 #right_header ul li:hover {
 	background: orange; 	
@@ -73,6 +83,17 @@ article {
 article img {
 	width: 100%;
 }
+article img:hover {
+	animation: img_animation 2s;
+}
+.img_block {
+	height: 200px;
+	overflow: hidden; 
+}
+@keyframes img_animation {
+	from {width: 100%;}
+	to {width: 150%;}
+}
 .article_title {
 	text-align: center;
 	font-size: 20px;
@@ -94,6 +115,11 @@ article img {
 	text-align: center;
 	color: white;
 	font-size: 60px;
+	text-decoration: none;
+	transition: text-decoration 1s;
+}
+.second_section h2:hover {
+	text-decoration: underline;
 }
 .second_section .left_side {
 	width: 40%;
@@ -137,8 +163,10 @@ footer {
 	margin: 0 10px;
 	font-weight: bold;
 	font-size: 30px;
+	color: black;
+	transition: color 2s;
 
 }
 .right_footer ul li:hover {
-	background: orange;
+	color: orange;
 }
